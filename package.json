@@ -1,0 +1,12 @@
+{
+  "name": "brp-regelwerk",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bremen RP VC Regelwerk",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

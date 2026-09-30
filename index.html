@@ -1,0 +1,689 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>🇩🇪 | Bremen RP VC | 🎙️ – Regelwerk</title>
+<meta name="description" content="Offizielles Regelwerk von 🇩🇪 | Bremen RP VC | 🎙️">
+<style>
+:root{
+  --bg:#05070d;--panel:#0b1020;--panel2:#0e1528;--line:#202940;--line2:#2a3550;
+  --text:#f4f1f5;--muted:#9aa4b8;--accent:#ff4d8d;--accent2:#b92d68;
+  --accent-soft:#24101d;--purple-soft:#1a1121;--danger:#ff5a7f;--ok:#43c98a;
+  --shadow:0 14px 38px rgba(0,0,0,.35);--shadow2:0 22px 55px rgba(255,52,126,.10);
+  --radius:16px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap');
+body{
+  margin:0;background:
+  radial-gradient(circle at 85% 0%,rgba(139,77,232,.11),transparent 28%),
+  radial-gradient(circle at 15% 0%,rgba(101,118,232,.10),transparent 24%),
+  var(--bg);
+  color:var(--text);font:15px/1.68 'Outfit','Trebuchet MS','Segoe UI',system-ui,sans-serif
+}
+a{color:inherit;text-decoration:none}
+button,input,textarea,select{font:inherit}
+.app{display:flex;min-height:100vh}
+.sidebar{
+  width:292px;background:rgba(5,8,16,.95);border-right:1px solid var(--line);
+  position:fixed;inset:0 auto 0 0;padding:22px 16px;overflow:auto;z-index:30;
+  backdrop-filter:blur(14px)
+}
+.brand{padding:9px 10px 20px;border-bottom:1px solid var(--line);margin-bottom:15px}
+.brand strong{display:block;font-size:17px;letter-spacing:.01em}
+.brand span{color:var(--muted);font-size:12px}
+.nav-title{color:#8a93a3;text-transform:uppercase;font-size:10px;letter-spacing:.12em;margin:18px 10px 8px;font-weight:800}
+.nav a{
+  display:flex;gap:10px;align-items:center;padding:10px 11px;border-radius:11px;
+  color:#c0c9d9;margin:3px 0;transition:.18s ease
+}
+.nav a:hover,.nav a.active{
+  background:linear-gradient(90deg,#1b1220,#101a2c);color:#ffd4e2;
+  box-shadow:inset 3px 0 0 var(--accent)
+}
+.badge{margin-left:auto;color:#7d89a0;font-size:11px}
+.main{margin-left:292px;width:calc(100% - 292px);min-width:0}
+.topbar{
+  position:sticky;top:0;z-index:25;background:rgba(6,10,19,.88);
+  backdrop-filter:blur(16px);border-bottom:1px solid var(--line);
+  padding:12px 30px;display:flex;gap:12px;align-items:center
+}
+.menu{
+  display:none;background:#0c1322;border:1px solid var(--line2);color:var(--text);
+  border-radius:10px;padding:9px 11px;cursor:pointer
+}
+.search{flex:1;max-width:820px;position:relative}
+.search input{
+  width:100%;background:#0c1322;border:1px solid var(--line2);color:var(--text);
+  border-radius:13px;padding:12px 44px 12px 42px;outline:none;box-shadow:0 3px 14px rgba(29,36,51,.05)
+}
+.search input:focus{border-color:var(--accent);box-shadow:0 0 0 4px rgba(101,118,232,.12)}
+.search span{position:absolute;left:14px;top:9px;color:#7c8798;font-size:18px}
+.search-hint{font-size:11px;color:#8791a1;margin-top:5px;margin-left:3px}
+.report-top{
+  border:1px solid var(--line2);background:#0b1020;color:#404a5b;border-radius:12px;
+  padding:10px 13px;cursor:pointer;font-weight:700
+}
+.report-top:hover{border-color:var(--accent);color:#3d4387}
+.hero{
+  padding:62px 7vw 45px;background:
+  linear-gradient(135deg,rgba(101,118,232,.14),rgba(139,77,232,.09) 48%,transparent 75%);
+  border-bottom:1px solid var(--line)
+}
+.kicker{color:#ff78a7;font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:12px}
+.hero h1{font-size:clamp(34px,5vw,64px);line-height:1.04;margin:12px 0}
+.hero p{max-width:780px;color:#9ba6bb;font-size:17px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.chip{
+  border:1px solid var(--line);background:rgba(13,18,31,.86);padding:7px 10px;
+  border-radius:999px;color:#c5cddd;font-size:12px
+}
+.content{max-width:1120px;margin:auto;padding:38px 7vw 90px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:15px;margin:18px 0 38px}
+.card{
+  background:rgba(11,16,29,.94);border:1px solid var(--line);border-radius:var(--radius);
+  padding:20px;box-shadow:var(--shadow)
+}
+.card:hover{box-shadow:var(--shadow2);transform:translateY(-1px)}
+.card h3{margin:0 0 6px}.card p{color:var(--muted);margin:0}
+.section{scroll-margin-top:90px;margin:50px 0}
+.section-head{
+  display:flex;align-items:flex-end;justify-content:space-between;gap:15px;
+  border-bottom:1px solid var(--line);padding-bottom:13px
+}
+.section h2{font-size:30px;margin:0}
+.section .desc{color:var(--muted);margin:7px 0 0}
+.toc{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}
+.toc a{font-size:12px;color:#5e6777;border:1px solid var(--line2);padding:6px 9px;border-radius:8px;background:#fff}
+.rule{
+  border:1px solid var(--line);background:rgba(255,255,255,.92);
+  border-radius:12px;margin:9px 0;overflow:hidden;box-shadow:0 2px 10px rgba(36,44,58,.03)
+}
+.rule summary{cursor:pointer;list-style:none;padding:14px 16px;font-weight:750}
+.rule summary::-webkit-details-marker{display:none}
+.rule summary:before{content:"＋";color:var(--accent);margin-right:10px;font-weight:800}
+.rule[open] summary:before{content:"−";color:var(--accent2)}
+.rule[open]{border-color:#c6cbed;box-shadow:0 8px 24px rgba(79,76,165,.08)}
+.rule .body{padding:0 16px 16px;color:#b2bdcf;border-top:1px solid var(--line)}
+.rule .body p{margin:13px 0}
+.rule .body ul{margin:8px 0 0 22px}
+.notice{
+  border-left:3px solid var(--accent);
+  background:linear-gradient(90deg,#180d18,#0b1525);
+  padding:13px 15px;border-radius:8px;color:#bcc6d7
+}
+.danger{border-left-color:var(--danger)}
+.ok{border-left-color:var(--ok)}
+.support{display:grid;grid-template-columns:1.15fr .85fr;gap:18px}
+.time{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--line)}
+.time:last-child{border-bottom:0}.time b{font-weight:750}.closed{color:#768598}.open{color:var(--ok)}
+.no-results{
+  display:none;padding:22px;border:1px dashed var(--line2);border-radius:12px;
+  color:var(--muted);text-align:center;background:#fff
+}
+.editbox{
+  background:linear-gradient(135deg,#f6f7fb,#f8f3ff);border:1px solid #d9d2f6;
+  border-radius:14px;padding:17px;margin:20px 0;color:#586277
+}
+.editbox code{color:#674fd0}
+.report-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.report-panel{background:#0b1020;border:1px solid var(--line);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow)}
+.report-panel label{display:block;font-size:12px;font-weight:800;color:#596477;margin:0 0 6px}
+.report-panel input,.report-panel select,.report-panel textarea{
+  width:100%;background:#fbfcfd;border:1px solid var(--line2);border-radius:10px;
+  padding:10px 12px;color:var(--text);outline:none
+}
+.report-panel input:focus,.report-panel select:focus,.report-panel textarea:focus{
+  border-color:var(--accent);box-shadow:0 0 0 4px rgba(101,118,232,.10)
+}
+.report-panel textarea{min-height:150px;resize:vertical}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.form-group{margin-bottom:12px}
+.report-actions{display:flex;flex-wrap:wrap;gap:9px;margin-top:12px}
+.btn{
+  border:1px solid var(--line2);background:#0b1020;color:#445066;padding:10px 13px;
+  border-radius:10px;cursor:pointer;font-weight:750
+}
+.btn.primary{background:linear-gradient(135deg,#ff4d8d,#b92d68);color:#fff;border-color:transparent}
+.btn:hover{transform:translateY(-1px)}
+.report-status{min-height:22px;margin-top:10px;color:#9ba6b9;font-size:13px}
+.history{display:grid;gap:10px}
+.history-item{padding:13px 15px;background:#0b1020;border:1px solid var(--line);border-radius:11px}
+.history-item b{color:#4b5570}.history-item span{color:#7f8aa0;font-size:12px}
+footer{
+  border-top:1px solid var(--line);padding:32px 7vw;color:#8995aa;text-align:center;background:rgba(5,8,15,.75)
+}
+footer strong{color:#d8dce5}
+.footer-links{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin:10px 0}
+.footer-links a{text-decoration:underline;text-underline-offset:3px}
+copyright small{font-size:11px}
+@media(max-width:900px){
+  .sidebar{transform:translateX(-100%);transition:.2s;width:280px}
+  .sidebar.show{transform:translateX(0)}
+  .main{margin-left:0;width:100%}
+  .menu{display:block}.topbar{padding:10px 14px}
+  .hero,.content{padding-left:18px;padding-right:18px}
+  .support,.report-grid{grid-template-columns:1fr}
+  .form-row{grid-template-columns:1fr}
+  .report-top{display:none}
+}
+
+<style>
+/* Dark cherry-pink / blue-black theme */
+.sidebar{
+  box-shadow:16px 0 40px rgba(0,0,0,.22);
+}
+.brand strong{color:#fff}
+.brand span{color:#8793aa}
+.topbar{box-shadow:0 8px 30px rgba(0,0,0,.18)}
+.search input::placeholder{color:#6f7b91}
+.search-hint{color:#758198}
+.report-top:hover{background:#160f1a}
+.hero{box-shadow:inset 0 -1px 0 rgba(255,255,255,.02)}
+.chip:hover{border-color:#6a2747}
+.stat b{color:#f7dbe6}.stat span{color:#7e8ba2}
+.quick a:hover{background:#130e18;border-color:#68294b;color:#ffb6cc}
+.rule summary{color:#e8ebf2}
+.rule .body strong{color:#ffb3c9}
+.notice{box-shadow:0 8px 28px rgba(0,0,0,.18)}
+.report-panel{background:rgba(10,15,27,.96)}
+.report-panel input,.report-panel select,.report-panel textarea{
+  background:#08101d;color:#edf1f7
+}
+.report-panel input::placeholder,.report-panel textarea::placeholder{color:#68758c}
+.btn{background:#0d1525;color:#c8d0df}
+.btn:hover{border-color:#67304e}
+footer{background:rgba(4,7,13,.86)}
+
+<style>
+/* Typography & black readable content */
+body{
+  font-family:'Outfit','Trebuchet MS','Segoe UI',system-ui,sans-serif;
+  letter-spacing:.005em;
+}
+.hero h1,.section h2,.card h3,.brand strong{
+  font-weight:800;
+  letter-spacing:-.035em;
+}
+.nav a{font-weight:600;letter-spacing:.005em}
+
+.content .card,
+.content .rule,
+.report-panel,
+.notice,
+.stat,
+.toc a,
+.quick a{
+  background:#f5f5f6 !important;
+  color:#0d0f14 !important;
+  border-color:#d3d5da !important;
+}
+.content .card h3,
+.content .rule summary,
+.report-panel h3,
+.stat b{
+  color:#06070a !important;
+}
+.content .card p,
+.content .rule .body,
+.content .rule .body p,
+.report-panel p,
+.stat span,
+.notice,
+.toc a,
+.quick a{
+  color:#15171c !important;
+}
+.rule summary:before{color:#bd285f !important}
+.rule[open] summary:before{color:#8e1d4a !important}
+.rule[open]{border-color:#e5a1bb !important}
+
+.search input,
+.report-panel input,
+.report-panel select,
+.report-panel textarea{
+  color:#08090c !important;
+  background:#f5f5f6 !important;
+}
+.search input::placeholder,
+.report-panel input::placeholder,
+.report-panel textarea::placeholder{
+  color:#6e737d !important;
+}
+.search-hint{color:#8d97aa !important}
+
+footer small{color:#8d97aa !important}
+footer strong{color:#f1f2f5 !important}
+.footer-links a{color:#ff7ca9 !important}
+
+.hero p{color:#aeb7c8 !important}
+.last-update{color:#8d97aa !important}
+.kicker{color:#ff7ca9 !important}
+.chip{color:#d9deea !important;background:#0e1626 !important;border-color:#2c3850 !important}
+.quick a:hover{color:#08090c !important;background:#ffb0ca !important;border-color:#ff6f9e !important}
+
+.btn{color:#08090c !important;background:#f5f5f6 !important}
+.btn.primary{color:#fff !important;background:linear-gradient(135deg,#ff4e8d,#b72867) !important}
+.report-top{color:#08090c !important;background:#f5f5f6 !important}
+
+.sidebar .brand span{color:#8490a5 !important}
+.nav-title{color:#748097 !important}
+.nav a{color:#c3ccdc !important}
+.nav a:hover,.nav a.active{color:#fff !important}
+
+.search{max-width:900px}
+</style>
+
+</style>
+
+</style>
+<style>
+/* Feinschliff */
+.brand strong,.hero h1,.section h2,.card h3{letter-spacing:-.025em}
+.hero h1{
+  background:linear-gradient(100deg,#f5f4f7 0%,#ff7fac 52%,#b846ff 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent
+}
+.kicker{display:inline-flex;align-items:center;gap:7px}
+.kicker:before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent2));box-shadow:0 0 0 4px rgba(101,118,232,.10)}
+.section-head:after{content:"";display:block}
+.card{transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease}
+.nav a{font-weight:600}
+.rule summary{font-size:14px}
+.rule .body{font-size:14px}
+.rule .body strong{color:#424b60}
+.eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:#7b8595;font-weight:800}
+.statbar{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:24px;max-width:850px}
+.stat{background:rgba(13,18,31,.86);border:1px solid var(--line);border-radius:13px;padding:12px 13px}
+.stat b{display:block;font-size:18px;color:#3f4770}.stat span{font-size:11px;color:#7b8594}
+.quick{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.quick a{padding:8px 11px;border-radius:9px;background:#0b1020;border:1px solid var(--line);font-size:12px;color:#556075}
+.quick a:hover{border-color:#bcb8ef;color:#4d55a2}
+.last-update{font-size:11px;color:#7c879c;margin-top:12px}
+@media(max-width:700px){.statbar{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<div class="app">
+<aside class="sidebar" id="sidebar">
+  <div class="brand"><strong>🇩🇪 | Bremen RP VC | 🎙️</strong><span>Offizielles Regelwerk</span></div>
+  <nav class="nav">
+    <div class="nav-title">Übersicht</div>
+    <a href="#start">🏠 Startseite</a>
+    <a href="#regeln">📖 Regelwerk</a>
+    <div class="nav-title">Regeln</div>
+    <a href="#allgemein">01 · Allgemeine Regeln <span class="badge">§1</span></a>
+    <a href="#rp">02 · RP-Regeln <span class="badge">§2</span></a>
+    <a href="#safezones">03 · Safezones <span class="badge">§3</span></a>
+    <a href="#support">04 · Supportzeiten <span class="badge">§4</span></a>
+    <a href="#fraktionen">05 · Fraktionen <span class="badge">§5</span></a>
+    <a href="#fraktionsregeln">06 · Fraktionsregeln <span class="badge">§6</span></a>
+    <div class="nav-title">Zusätzlich</div>
+    <a href="#sanktionen">⚖️ Sanktionen</a>
+    <a href="#historie">📝 Änderungshistorie</a>
+    <a href="#copyright">© Copyright</a>
+  </nav>
+</aside>
+
+<main class="main">
+<header class="topbar">
+  <button class="menu" id="menu">☰</button>
+  <div class="search"><span>⌕</span><input id="search" type="search" placeholder="Regel suchen … z. B. RDM, Safezone, Fraktion"><div class="search-hint">Tipp: / startet die Suche · ESC setzt sie zurück · Suche nach §-Nummer, Begriff oder Regelname.</div></div>
+</header>
+
+<section class="hero" id="start">
+  <div class="kicker">Offizielles Regelwerk · Version 1.7</div>
+  <h1>🇩🇪 | Bremen RP VC | 🎙️</h1>
+  <p>Der verbindliche Rahmen für faires, nachvollziehbares und immersives Roleplay. Nutze die Suche, öffne einzelne Paragraphen oder springe direkt zu einem Bereich.</p>
+  <div class="quick">
+    <a href="#allgemein">§1 Allgemeine Regeln</a>
+    <a href="#rp">§2 RP-Regeln</a>
+    <a href="#safezones">§3 Safezones</a>
+    <a href="#support">§4 Support</a>
+    <a href="#fraktionen">§5 Fraktionen</a>
+    <a href="#fraktionsregeln">§6 Fraktionsregeln</a>
+  </div>
+  <div class="statbar">
+    <div class="stat"><b>6</b><span>Hauptbereiche</span></div>
+    <div class="stat"><b>95+</b><span>Regeln & Hinweise</span></div>
+    <div class="stat"><b>24/7</b><span>Regelwerk online</span></div>
+    <div class="stat"><b>1.3</b><span>aktuelle Version</span></div>
+  </div>
+  <div class="last-update">Letzte Überarbeitung: 30. September 2026</div>
+</section>
+
+<div class="content">
+  <div class="editbox">
+    <b>🛠️ Für die Leitung:</b> Diese Website ist als einzelne <code>index.html</code> aufgebaut. Regeltexte, Zeiten und Kategorien können direkt im HTML geändert werden. Die sechs gewünschten Hauptbereiche sind bereits enthalten. Für größere Änderungen kannst du die Datei einfach in einem Editor wie VS Code öffnen.
+  </div>
+
+  <section class="section" id="regeln">
+    <div class="section-head"><div><h2>📖 Regelwerk</h2><p class="desc">Alle sechs von dir vorgegebenen Bereiche auf einen Blick.</p></div></div>
+    <div class="grid">
+      <a class="card" href="#allgemein"><h3>01 · Allgemeine Regeln</h3><p>Grundlagen, Verhalten, Kommunikation, Bugs, Team und Fairness.</p></a>
+      <a class="card" href="#rp"><h3>02 · RP-Regeln</h3><p>IC/OOC, FailRP, PowerRP, Meta, RDM, VDM, RP-Flucht und mehr.</p></a>
+      <a class="card" href="#safezones"><h3>03 · Safezones</h3><p>Geschützte Bereiche, Verhalten und Umgang mit laufenden Situationen.</p></a>
+      <a class="card" href="#support"><h3>04 · Supportzeiten</h3><p>Deine angegebenen Supportzeiten und Regeln für Supportfälle.</p></a>
+      <a class="card" href="#fraktionen"><h3>05 · Fraktionen</h3><p>Grundlagen für staatliche, legale, neutrale und sonstige Fraktionen.</p></a>
+      <a class="card" href="#fraktionsregeln"><h3>06 · Fraktionsregeln</h3><p>Interne Abläufe, Leitung, Fahrzeuge, Konflikte, Wechsel und Fraktions-RP.</p></a>
+    </div>
+  </section>
+
+  <div id="results" class="no-results">Keine passende Regel gefunden. Versuche einen anderen Suchbegriff.</div>
+
+  <section class="section" id="allgemein">
+    <div class="section-head"><div><h2>§1 · Allgemeine Regeln</h2><p class="desc">Grundregeln für alle Mitglieder von Bremen RP VC.</p></div></div>
+    <div class="notice ok"><strong>Grundsatz:</strong> Nicht alles, was technisch möglich ist, ist automatisch gutes RP. Handle nachvollziehbar, fair und so, dass auch die andere Seite sinnvoll weiterspielen kann.</div>
+    <div class="toc"><a href="#a1">§1.1–1.8</a><a href="#a9">§1.9–1.16</a><a href="#a17">§1.17–1.24</a></div>
+    <details class="rule" id="a1"><summary>§1.1 · Geltungsbereich</summary><div class="body"><p>Dieses Regelwerk gilt für alle Spieler, Fraktionen und sonstigen Teilnehmer des Roleplays. Sonderregeln, Eventregeln oder offiziell bekanntgegebene Ergänzungen gelten zusätzlich, sofern sie ausdrücklich als solche veröffentlicht wurden.</p></div></details>
+    <details class="rule"><summary>§1.2 · Eigenverantwortung</summary><div class="body"><p>Jeder Spieler ist selbst dafür verantwortlich, die aktuelle Fassung des Regelwerks zu kennen. Unwissenheit schützt grundsätzlich nicht vor einer Sanktion.</p></div></details>
+    <details class="rule"><summary>§1.3 · Respekt und Umgang</summary><div class="body"><p>Behandle andere Spieler, Teammitglieder und deren Zeit mit Respekt. Gezielte Provokation, Belästigung, Mobbing, Einschüchterung oder OOC-Streit zur Beeinflussung des RP sind untersagt.</p></div></details>
+    <details class="rule"><summary>§1.4 · Diskriminierung</summary><div class="body"><p>Menschenfeindliche, rassistische, sexistische oder vergleichbar diskriminierende Inhalte sind nicht erlaubt. RP-Kontext ist kein Freibrief für OOC-Hass oder Belästigung.</p></div></details>
+    <details class="rule"><summary>§1.5 · Trolling und Stören</summary><div class="body"><p>Absichtliches Stören von RP, sinnloses Provozieren, Soundspam oder das bewusste Zerstören fremder Situationen ist verboten.</p></div></details>
+    <details class="rule"><summary>§1.6 · Mikrofon und Voice</summary><div class="body"><p>Der Voice-Chat soll verständlich und für das RP nutzbar sein. Dauerhafte Störgeräusche, absichtliches Schreien und Soundspam sind zu vermeiden.</p></div></details>
+    <details class="rule"><summary>§1.7 · Bugs, Exploits und Glitches</summary><div class="body"><p>Fehler des Spiels oder der Servermechanik dürfen nicht bewusst ausgenutzt werden, um sich Geld, Gegenstände, Positionen, Informationen oder andere Vorteile zu verschaffen. Schwere oder reproduzierbare Fehler sind möglichst mit einer kurzen Beschreibung und einem Beweis zu melden.</p></div></details>
+    <details class="rule"><summary>§1.8 · Drittprogramme</summary><div class="body"><p>Unerlaubte Programme oder Manipulationen, die einen unfairen Vorteil verschaffen, sind nicht gestattet.</p></div></details>
+    <details class="rule" id="a9"><summary>§1.9 · OOC und IC trennen</summary><div class="body"><p>Informationen aus dem OOC-Bereich dürfen nicht ohne passenden RP-Grund ins IC übernommen werden.</p></div></details>
+    <details class="rule"><summary>§1.10 · Teamweisungen</summary><div class="body"><p>Während eines Supportfalls sind Anweisungen des zuständigen Teammitglieds zu befolgen. Streit über eine Entscheidung wird nach der Situation geklärt.</p></div></details>
+    <details class="rule"><summary>§1.11 · Team-Imitation</summary><div class="body"><p>Es ist verboten, sich als Teammitglied auszugeben oder Teamrechte vorzutäuschen.</p></div></details>
+    <details class="rule"><summary>§1.12 · Regelumgehung</summary><div class="body"><p>Das absichtliche Ausnutzen von Lücken, Formulierungen oder technischen Möglichkeiten zur Umgehung einer Regel ist untersagt.</p></div></details>
+    <details class="rule"><summary>§1.13 · Verlassen laufender Situationen</summary><div class="body"><p>Das absichtliche Verlassen des Servers oder das bewusste Herbeiführen einer Unterbrechung, um einer laufenden RP-Situation oder ihren Konsequenzen zu entgehen, ist verboten. Bei einem technischen Absturz ist die Situation nach Möglichkeit fortzuführen oder im Support zu melden.</p></div></details>
+    <details class="rule"><summary>§1.14 · Beweismittel</summary><div class="body"><p>Beweismittel sollen vollständig und unverfälscht sein. Screenshots oder Aufnahmen dürfen nicht absichtlich so bearbeitet werden, dass wichtige Informationen fehlen.</p></div></details>
+    <details class="rule"><summary>§1.15 · Fremde Situationen</summary><div class="body"><p>Das grundlose Einmischen in fremde RP-Situationen ist zu vermeiden. Ein Eingreifen benötigt einen nachvollziehbaren RP-Bezug.</p></div></details>
+    <details class="rule"><summary>§1.16 · Spielspaß und Fairness</summary><div class="body"><p>Das Ziel des Regelwerks ist ein faires RP. Nicht das reine Gewinnen einer Situation, sondern eine nachvollziehbare und für alle Beteiligten spielbare Geschichte steht im Vordergrund.</p></div></details>
+    <details class="rule" id="a17"><summary>§1.17 · Absprachen</summary><div class="body"><p>Absprachen, die eine RP-Situation künstlich manipulieren oder anderen Spielern einen unfairen Vorteil verschaffen, sind verboten.</p></div></details>
+    <details class="rule"><summary>§1.18 · Accountverantwortung</summary><div class="body"><p>Jeder Nutzer ist für die Handlungen über seinen Account verantwortlich. Account-Sharing erfolgt auf eigene Verantwortung und kann bei Regelverstößen berücksichtigt werden.</p></div></details>
+    <details class="rule"><summary>§1.19 · Aufnahmen und Privatsphäre</summary><div class="body"><p>Aufnahmen dürfen für Beweiszwecke oder Content erstellt werden, sofern dadurch keine privaten oder schützenswerten Daten anderer Personen veröffentlicht werden. Das absichtliche Veröffentlichen von privaten Daten ist verboten.</p></div></details>
+    <details class="rule"><summary>§1.20 · Doxxing</summary><div class="body"><p>Das Veröffentlichen oder Verbreiten privater personenbezogener Daten anderer Personen ist verboten.</p></div></details>
+    <details class="rule"><summary>§1.21 · Fremdwerbung und Abwerbung</summary><div class="body"><p>Fremdwerbung, gezielte Abwerbung und das Veröffentlichen fremder Community-Einladungen sind ohne Genehmigung nicht gestattet.</p></div></details>
+    <details class="rule"><summary>§1.22 · Bugreport</summary><div class="body"><p>Schwerwiegende technische Fehler sollen möglichst mit einer nachvollziehbaren Beschreibung und – sofern zulässig – einem Beweis dem Team gemeldet werden.</p></div></details>
+    <details class="rule"><summary>§1.23 · Sanktionen nicht selbst durchsetzen</summary><div class="body"><p>Spieler dürfen sich nicht selbst als Moderation aufspielen oder andere eigenmächtig bestrafen.</p></div></details>
+    <details class="rule"><summary>§1.24 · Hausrecht des Teams</summary><div class="body"><p>Die Serverleitung kann in Situationen, die durch das Regelwerk nicht eindeutig abgedeckt sind, eine angemessene Einzelfallentscheidung treffen.</p></div></details>
+  </section>
+
+  <section class="section" id="rp">
+    <div class="section-head"><div><h2>§2 · RP-Regeln</h2><p class="desc">Regeln für glaubwürdiges und faires Roleplay.</p></div></div>
+    <div class="grid" aria-label="RP-Begriffe">
+      <div class="card"><h3>RDM</h3><p>Grundloses Angreifen oder Töten ohne nachvollziehbaren RP-Anlass.</p></div>
+      <div class="card"><h3>VDM</h3><p>Fahrzeuge werden absichtlich als Waffe gegen andere Spieler eingesetzt.</p></div>
+      <div class="card"><h3>FailRP</h3><p>Verhalten, das offensichtlich nicht zur Situation, Rolle oder Spielwelt passt.</p></div>
+      <div class="card"><h3>PowerRP</h3><p>Handlungen werden einem anderen Charakter aufgezwungen, ohne angemessene Reaktionsmöglichkeit.</p></div>
+      <div class="card"><h3>Metagaming</h3><p>OOC-Wissen wird unzulässig als IC-Wissen verwendet.</p></div>
+      <div class="card"><h3>FearRP</h3><p>Erkennbare Gefahr wird glaubwürdig berücksichtigt und ausgespielt.</p></div>
+    </div>
+    <details class="rule"><summary>§2.1 · In Character (IC)</summary><div class="body"><p>Alles, was dein Charakter innerhalb der Spielwelt erlebt, weiß oder tut, gehört zum IC-Bereich.</p></div></details>
+    <details class="rule"><summary>§2.2 · Out of Character (OOC)</summary><div class="body"><p>OOC-Informationen gehören nicht in laufende RP-Situationen. OOC-Kommunikation soll auf die vorgesehenen Wege beschränkt werden.</p></div></details>
+    <details class="rule"><summary>§2.3 · FailRP</summary><div class="body"><p>FailRP ist Verhalten, das die Glaubwürdigkeit der RP-Situation deutlich bricht. Entscheidend ist der Zusammenhang: Unrealistische Reaktionen auf Unfälle, bewusstes Ignorieren schwerer Konsequenzen oder offensichtlich unpassendes Verhalten können darunter fallen.</p></div></details>
+    <details class="rule"><summary>§2.4 · PowerRP</summary><div class="body"><p>PowerRP liegt vor, wenn einem anderen Charakter eine Handlung, ein Ergebnis oder eine Folge einfach aufgezwungen wird, ohne ihm eine realistische Reaktionsmöglichkeit zu geben. Beschreibe deine Handlung so, dass die Gegenseite darauf reagieren kann.</p></div></details>
+    <details class="rule"><summary>§2.5 · Metagaming</summary><div class="body"><p>Dein Charakter darf nur Wissen verwenden, das er innerhalb des RP erhalten hat. Informationen aus Streams, Screenshots, privaten Nachrichten, Supportgesprächen, externen Chats oder Beobachtungen auf anderen Accounts dürfen nicht als IC-Wissen genutzt werden.</p><p><strong>Ausnahme:</strong> Informationen, die nachweisbar auf einem dafür vorgesehenen IC-Kanal oder durch eine IC-Handlung erhalten wurden.</p></div></details>
+    <details class="rule"><summary>§2.6 · RDM</summary><div class="body"><p>RDM liegt vor, wenn ein Spieler ohne nachvollziehbaren, ausgespielten RP-Anlass angegriffen oder getötet wird. Eine kurze OOC-Absprache oder ein nachträglich erfundener Grund macht eine grundlose Handlung nicht automatisch zu gültigem RP.</p></div></details>
+    <details class="rule"><summary>§2.7 · VDM</summary><div class="body"><p>VDM liegt vor, wenn ein Fahrzeug bewusst eingesetzt wird, um einen Spieler ohne nachvollziehbaren RP-Anlass zu verletzen, zu überfahren oder gezielt aus dem RP zu nehmen. Normale Verkehrsunfälle oder plausibel ausgespielte Fahrfehler sind nicht automatisch VDM.</p></div></details>
+    <details class="rule"><summary>§2.8 · FearRP</summary><div class="body"><p>Erkennbare Gefahrensituationen sind glaubwürdig auszuspielen. Wer eindeutig unterlegen ist oder unter unmittelbarer Bedrohung steht, darf nicht ohne plausiblen Grund so handeln, als bestünde keinerlei Gefahr. Unrealistisches „Keine Angst vor Konsequenzen“-Verhalten kann als FailRP gewertet werden.</p></div></details>
+    <details class="rule"><summary>§2.9 · New-Life-Prinzip</summary><div class="body"><p>Nach einem vom System bzw. der RP-Situation vorgesehenen Respawn darf die unmittelbar zuvor verlorene Situation nicht einfach mit dem Ziel fortgesetzt werden, sich zu rächen oder denselben Konflikt ohne neuen RP-Anlass wieder zu eröffnen. Informationen aus der vorherigen Situation dürfen nicht missbräuchlich weiterverwendet werden.</p></div></details>
+    <details class="rule"><summary>§2.10 · RP-Flucht / Combat Logging</summary><div class="body"><p>Das Ausloggen, absichtliche Unterbrechen oder sonstige Entziehen aus einer laufenden RP-Situation ist untersagt. Bei technischen Problemen soll die Situation anschließend fair geklärt werden.</p></div></details>
+    <details class="rule"><summary>§2.11 · Streamsniping</summary><div class="body"><p>Livestreams oder Aufnahmen dürfen nicht genutzt werden, um IC-Informationen zu erlangen, die der Charakter auf normalem Weg nicht kennen könnte.</p></div></details>
+    <details class="rule"><summary>§2.12 · Cop- und Fraktions-Baiting</summary><div class="body"><p>Staatliche oder andere Fraktionen dürfen nicht absichtlich und ohne glaubwürdigen RP-Grund provoziert werden, nur um eine Verfolgung, Kontrolle oder Eskalation zu erzwingen. Normales risikoreiches RP ist davon nicht automatisch betroffen.</p></div></details>
+    <details class="rule"><summary>§2.13 · Notrufmissbrauch</summary><div class="body"><p>Notrufe müssen einen sinnvollen RP-Hintergrund haben. Spam, absichtlich falsche Meldungen oder das gezielte Herbeirufen von Einsatzkräften zum Trollen sind verboten.</p></div></details>
+    <details class="rule"><summary>§2.14 · Absperrungen</summary><div class="body"><p>Erkennbare Absperrungen und Einsatzbereiche sind zu respektieren. Ein Durchbrechen muss einen nachvollziehbaren RP-Grund besitzen.</p></div></details>
+    <details class="rule"><summary>§2.15 · Unbeteiligte</summary><div class="body"><p>Unbeteiligte Spieler dürfen nicht grundlos in eine laufende Situation gezogen werden. Eingriffe benötigen einen nachvollziehbaren Zusammenhang.</p></div></details>
+    <details class="rule"><summary>§2.16 · RP-Verweigerung</summary><div class="body"><p>Legitime RP-Situationen sind grundsätzlich auszuspielen. Ein Spieler darf eine Situation nicht allein deshalb abbrechen oder blockieren, weil ihr möglicher Ausgang nicht den eigenen Vorstellungen entspricht. Reale technische Probleme oder berechtigte Schutzgründe sind davon ausgenommen.</p></div></details>
+    <details class="rule"><summary>§2.17 · Realistische Fahrzeuge</summary><div class="body"><p>Fahrzeuge sind entsprechend ihrer Beschaffenheit und der Situation zu verwenden. Unrealistisches Fahren oder bewusstes Rammen ohne RP-Grund kann als FailRP/VDM gewertet werden.</p></div></details>
+    <details class="rule"><summary>§2.18 · Einsatzfahrzeuge</summary><div class="body"><p>Einsatzfahrzeuge sollen entsprechend ihrer Funktion genutzt werden. Das grundlose Zweckentfremden oder Stören von Einsätzen ist untersagt.</p></div></details>
+    <details class="rule"><summary>§2.19 · Eskalationsstufen</summary><div class="body"><p>Konflikte sollen nachvollziehbar entstehen und sich angemessen entwickeln. Ein sofortiger Sprung von einem kleinen Streit zu einer extremen Eskalation ohne erkennbaren RP-Hintergrund ist zu vermeiden.</p></div></details>
+    <details class="rule"><summary>§2.17a · Serverrestart / technische Unterbrechung</summary><div class="body"><p>Wird eine laufende Situation durch einen Serverrestart, Disconnect oder technischen Fehler unterbrochen, darf niemand die Unterbrechung bewusst für einen Vorteil ausnutzen. Beteiligte sollen nach Möglichkeit an den vorherigen Stand anknüpfen oder den offenen Vorgang über den Support klären.</p></div></details>
+    <details class="rule"><summary>§2.17b · AFK und Nicht-Reagieren</summary><div class="body"><p>Wer in einer laufenden RP-Situation absichtlich nicht reagiert, um Zeit zu gewinnen oder die Situation zu blockieren, kann wegen RP-Verweigerung sanktioniert werden. Reale Abwesenheit ist möglichst vorher kenntlich zu machen.</p></div></details>
+    <details class="rule"><summary>§2.18a · Fremdinformationen / Funk / Streams</summary><div class="body"><p>Informationen aus Streams, Zuschauerchat, privaten Nachrichten oder externen Gesprächen dürfen nicht als IC-Wissen verwendet werden, sofern der Charakter sie nicht auf normalem RP-Weg erhalten hat.</p></div></details>
+        <details class="rule"><summary>§2.20 · Beweissituationen im RP</summary><div class="body"><p>Wichtige RP-Handlungen sollen nachvollziehbar ausgespielt werden. Aktionen dürfen nicht nachträglich durch OOC-Absprachen verändert werden, nur um einer Situation einen Vorteil zu geben.</p></div></details>
+  </section>
+
+  <section class="section" id="safezones">
+    <div class="section-head"><div><h2>§3 · Safezones</h2><p class="desc">Geschützte Bereiche und Regeln gegen Safezone-Missbrauch.</p></div></div>
+    <div class="notice">⚠️ Die konkreten Orte sollten von der Serverleitung bei Bedarf ergänzt oder geändert werden. Die Website ist dafür vorbereitet.</div>
+    <details class="rule"><summary>§3.1 · Definition einer Safezone</summary><div class="body"><p>Eine Safezone ist ein von der Serverleitung festgelegter Bereich mit besonderen Schutzregeln. Der konkrete Ort sollte für alle Spieler eindeutig bekanntgegeben werden. Unklare oder nicht veröffentlichte Bereiche gelten nicht automatisch als Safezone.</p></div></details>
+    <details class="rule"><summary>§3.2 · Grundschutz</summary><div class="body"><p>Grundloses Angreifen, Überfallen, absichtliches Töten oder gezieltes Eskalieren ist innerhalb einer Safezone nicht erlaubt.</p></div></details>
+    <details class="rule"><summary>§3.3 · Flucht in eine Safezone</summary><div class="body"><p>Wer bereits aktiv verfolgt, bedroht oder in eine Situation verwickelt ist, darf nicht ohne RP-Grund in eine Safezone flüchten, um Schutzregeln künstlich zu aktivieren. Die Safezone darf nicht als „Resetpunkt“ für laufende Konflikte missbraucht werden.</p></div></details>
+    <details class="rule"><summary>§3.4 · Spawn</summary><div class="body"><p>Spawncamping und das gezielte Abfangen von Spielern unmittelbar nach dem Spawn sind verboten.</p></div></details>
+    <details class="rule"><summary>§3.5 · Krankenhaus</summary><div class="body"><p>Der medizinische Bereich soll grundsätzlich ein geschützter RP-Ort sein. Medizinisches Roleplay hat dort Vorrang.</p></div></details>
+    <details class="rule"><summary>§3.6 · Polizeiliche Bereiche</summary><div class="body"><p>Polizeiliche Einrichtungen können als geschützte Bereiche definiert werden. Die konkrete Ausgestaltung muss serverseitig eindeutig bekanntgegeben werden.</p></div></details>
+    <details class="rule"><summary>§3.7 · Safezone-Provozieren</summary><div class="body"><p>Das absichtliche Provozieren anderer Spieler innerhalb einer Safezone, um eine Reaktion außerhalb zu erzwingen, ist verboten.</p></div></details>
+    <details class="rule"><summary>§3.8 · Safezone-Missbrauch</summary><div class="body"><p>Das gezielte Provozieren, Campen, Abwarten oder Heraussprinten aus einer Safezone mit dem ausschließlichen Ziel, eine laufende Auseinandersetzung zu gewinnen, ist untersagt. Schutzregeln dürfen nicht taktisch missbraucht werden.</p></div></details>
+  </section>
+
+  <section class="section" id="support">
+    <div class="section-head"><div><h2>§4 · Supportzeiten</h2><p class="desc">Deine angegebenen Zeiten – exakt übernommen.</p></div></div>
+    <div class="support">
+      <div class="card">
+        <h3>🕐 Supportzeiten</h3>
+        <div class="time"><b>Montag</b><span>16:00 – 21:00</span></div>
+        <div class="time"><b>Dienstag</b><span>16:00 – 21:00</span></div>
+        <div class="time"><b>Mittwoch</b><span>16:00 – 21:00</span></div>
+        <div class="time"><b>Donnerstag</b><span>16:00 – 21:00</span></div>
+        <div class="time"><b>Freitag</b><span>16:00 – 23:00</span></div>
+        <div class="time"><b>Samstag</b><span>15:00 – 23:00</span></div>
+        <div class="time"><b>Sonntag</b><span>13:45 – 21:25</span></div>
+      </div>
+      <div class="card">
+        <h3>🎫 Supportregeln</h3>
+        <p>Support ist für Regelverstöße, technische Probleme und offene Fragen da. Bitte schildere den Fall kurz, chronologisch und ohne unnötige Nebendiskussionen.</p>
+        <p>Eine laufende RP-Situation wird grundsätzlich zuerst ausgespielt. Danach kann sie mit Beweisen im Support geklärt werden. Bei akuten technischen Problemen oder einer ausdrücklichen Teamanweisung kann davon abgewichen werden.</p>
+        <p><strong>Wichtig:</strong> Die Supportzeiten sind geplante Besetzungszeiten. Eine sofortige Antwort kann nicht in jeder Situation garantiert werden.</p>
+      </div>
+    </div>
+    <details class="rule"><summary>§4.1 · Support während laufender RP-Situationen</summary><div class="body"><p>Während einer laufenden Situation soll nicht in den Support gewechselt werden, sofern kein unmittelbarer technischer oder administrativer Grund besteht.</p></div></details>
+    <details class="rule"><summary>§4.2 · Beweise</summary><div class="body"><p>Beweise sollten die Situation möglichst vollständig und verständlich zeigen. Die endgültige Beurteilung erfolgt durch das Team.</p></div></details>
+    <details class="rule"><summary>§4.3 · Ehrlichkeit</summary><div class="body"><p>Im Support sind vollständige und wahrheitsgemäße Angaben zu machen.</p></div></details>
+    <details class="rule"><summary>§4.4 · Respekt</summary><div class="body"><p>Auch im Support gilt ein respektvoller Umgang. Beleidigungen, Spam und absichtliches Stören können zusätzliche Konsequenzen haben.</p></div></details>
+    <details class="rule"><summary>§4.5a · Meldefrist</summary><div class="body"><p>Regelverstöße sollten so zeitnah wie möglich gemeldet werden, damit Beweise und Erinnerungen noch nachvollziehbar sind. Eine feste Frist sollte nur dann gelten, wenn sie von der Serverleitung ausdrücklich bekanntgegeben wird.</p></div></details>
+    <details class="rule"><summary>§4.5b · Beweise müssen nachvollziehbar sein</summary><div class="body"><p>Beweise sollen den relevanten Zusammenhang möglichst verständlich zeigen. Aus dem Material muss hervorgehen, welcher Regelverstoß behauptet wird. Zusammenschnitte dürfen nicht bewusst so bearbeitet werden, dass der entscheidende Kontext verloren geht.</p></div></details>
+    <details class="rule"><summary>§4.5 · Teamentscheidung</summary><div class="body"><p>Eine Entscheidung kann nach den vorgesehenen internen Wegen überprüft werden. Während der laufenden Bearbeitung sind Teamweisungen zu respektieren.</p></div></details>
+  </section>
+
+  <section class="section" id="fraktionen">
+    <div class="section-head"><div><h2>§5 · Fraktionen</h2><p class="desc">Grundlagen für organisierte Gruppen und offizielle Fraktionen.</p></div></div>
+    <details class="rule"><summary>§5.0 · Fraktionsarten</summary><div class="body"><p>Fraktionen können – je nach Serverkonzept – staatlich, legal, neutral, wirtschaftlich oder kriminell organisiert sein. Maßgeblich sind die offiziell veröffentlichten Fraktionskonzepte. Eine Fraktion darf nicht allein aufgrund ihrer Bezeichnung andere Regeln umgehen.</p></div></details>
+        <details class="rule"><summary>§5.1 · Anerkennung</summary><div class="body"><p>Offizielle Fraktionen benötigen die entsprechende Anerkennung bzw. Genehmigung durch die Serverleitung.</p></div></details>
+    <details class="rule"><summary>§5.2 · Fraktionskonzept</summary><div class="body"><p>Jede Fraktion soll ein nachvollziehbares Konzept besitzen. Mitglieder haben sich grundsätzlich am Konzept zu orientieren.</p></div></details>
+    <details class="rule"><summary>§5.3 · Fraktionsleitung</summary><div class="body"><p>Die Leitung trägt Verantwortung für Organisation, interne Abläufe und die Einhaltung des Serverregelwerks durch ihre Mitglieder.</p></div></details>
+    <details class="rule"><summary>§5.4 · Fraktionsfahrzeuge</summary><div class="body"><p>Offizielle Fraktionsfahrzeuge sind entsprechend ihrer vorgesehenen Aufgabe zu verwenden und nicht grundlos zweckzuentfremden.</p></div></details>
+    <details class="rule"><summary>§5.5 · Fraktionskleidung</summary><div class="body"><p>Wenn für eine Fraktion verbindliche Kleidung oder Kennzeichnungen festgelegt wurden, sind diese entsprechend zu verwenden.</p></div></details>
+    <details class="rule"><summary>§5.6 · Interne Informationen</summary><div class="body"><p>Interne Informationen dürfen nicht ohne nachvollziehbaren RP-Grund oder entgegen der jeweiligen Fraktionsregeln weitergegeben werden.</p></div></details>
+    <details class="rule"><summary>§5.7 · Korruption</summary><div class="body"><p>Korruptions-RP innerhalb staatlicher Fraktionen ist nur zulässig, wenn die dafür vorgesehenen Server-/Fraktionsvorgaben eingehalten werden.</p></div></details>
+    <details class="rule"><summary>§5.8 · Fraktionswechsel</summary><div class="body"><p>Fraktionswechsel dürfen nicht dazu genutzt werden, Sperren, Konsequenzen oder andere Regelungen zu umgehen. Eventuelle Wartezeiten legt die Serverleitung fest.</p></div></details>
+    <details class="rule"><summary>§5.9 · Fraktionskonflikte</summary><div class="body"><p>Konflikte zwischen Fraktionen benötigen einen nachvollziehbaren RP-Hintergrund. Unbeteiligte Parteien sollen nicht grundlos hineingezogen werden.</p></div></details>
+    <details class="rule"><summary>§5.10 · Drittpartei</summary><div class="body"><p>Eine nicht beteiligte Fraktion soll sich nicht ohne nachvollziehbaren RP-Grund in einen laufenden Konflikt einmischen.</p></div></details>
+  </section>
+
+  <section class="section" id="fraktionsregeln">
+    <div class="section-head"><div><h2>§6 · Fraktionsregeln</h2><p class="desc">Ausführliche Regeln für Leitung, Mitglieder und Fraktionssituationen.</p></div></div>
+    <details class="rule"><summary>§6.1 · Verhalten innerhalb der Fraktion</summary><div class="body"><p>Das Verhalten eines Mitglieds muss grundsätzlich zum Konzept und zur Rolle der Fraktion passen.</p></div></details>
+    <details class="rule"><summary>§6.2 · Verantwortung der Leitung</summary><div class="body"><p>Fraktionsleitungen müssen ihre Mitglieder angemessen einweisen und bei wiederholten Verstößen geeignete interne Maßnahmen treffen.</p></div></details>
+    <details class="rule"><summary>§6.3 · Fraktionskasse und Lager</summary><div class="body"><p>Fraktionsressourcen dürfen nicht zur persönlichen Bereicherung oder für sachfremde Zwecke missbraucht werden.</p></div></details>
+    <details class="rule"><summary>§6.4 · Dienstfahrzeuge</summary><div class="body"><p>Fraktionsfahrzeuge sind grundsätzlich für den vorgesehenen Fraktionszweck bestimmt. Private Nutzung kann durch die jeweilige Fraktion geregelt werden.</p></div></details>
+    <details class="rule"><summary>§6.5 · Uniformen und Kennzeichnung</summary><div class="body"><p>Bei offiziellen Diensten oder geplanten Fraktionsaktionen sind die festgelegten Kennzeichnungen einzuhalten.</p></div></details>
+    <details class="rule"><summary>§6.6 · Fraktions-RP</summary><div class="body"><p>Fraktionsmitglieder sollen ihre Rolle glaubwürdig ausspielen. Aktionen müssen zum jeweiligen Aufgabenbereich und Konzept passen.</p></div></details>
+    <details class="rule"><summary>§6.7 · Fraktions-Baiting</summary><div class="body"><p>Das absichtliche Provozieren anderer Fraktionen, um eine bestimmte Reaktion zu erzwingen, ist verboten.</p></div></details>
+    <details class="rule"><summary>§6.8 · Geiseln und Verhandlungen</summary><div class="body"><p>Geiselnahmen und Verhandlungen müssen einen nachvollziehbaren RP-Hintergrund haben und fair ausgespielt werden.</p></div></details>
+    <details class="rule"><summary>§6.9 · Drittpartei</summary><div class="body"><p>Außenstehende Fraktionen dürfen sich nicht grundlos in laufende Fraktionskonflikte einmischen.</p></div></details>
+    <details class="rule"><summary>§6.10 · Söldnerei und Fremdunterstützung</summary><div class="body"><p>Externe Unterstützung darf nicht dazu dienen, Regelbeschränkungen oder Fraktionsgrenzen zu umgehen. Konkrete Ausnahmen müssen von der Serverleitung festgelegt werden.</p></div></details>
+    <details class="rule"><summary>§6.11 · Verrat und interne Informationen</summary><div class="body"><p>Das Weitergeben interner Informationen muss einen nachvollziehbaren RP-Hintergrund besitzen und darf nicht aus OOC-Rache oder zur persönlichen Bereicherung erfolgen.</p></div></details>
+    <details class="rule"><summary>§6.12 · Auflösung</summary><div class="body"><p>Bei schweren oder wiederholten Verstößen kann eine Fraktion administrativ überprüft oder aufgelöst werden. Die konkrete Entscheidung erfolgt durch die zuständige Leitung.</p></div></details>
+    <details class="rule"><summary>§6.13 · Fraktionssperren</summary><div class="body"><p>Sofern Fraktionssperren eingerichtet werden, gelten die von der Serverleitung veröffentlichten Zeiten und Übergangsregeln. Diese können hier später ergänzt werden.</p></div></details>
+    <details class="rule"><summary>§6.14 · Mehrfachverstöße</summary><div class="body"><p>Wenn mehrere Mitglieder einer Fraktion wiederholt gegen Regeln verstoßen, kann dies zusätzlich auf Fraktionsebene bewertet werden.</p></div></details>
+  </section>
+
+  <section class="section" id="sanktionen">
+    <div class="section-head"><div><h2>⚖️ Sanktionen</h2><p class="desc">Mögliche Maßnahmen abhängig von Situation, Beweislage, Absicht und Vorgeschichte.</p></div></div>
+    <details class="rule"><summary>§7.1 · Verhältnismäßigkeit</summary><div class="body"><p>Sanktionen sollen sich am konkreten Verstoß orientieren. Schwere, Absicht, Wiederholung, Folgen und vorhandene Beweise können berücksichtigt werden.</p></div></details>
+    <details class="rule"><summary>§7.2 · Wiederholte Verstöße</summary><div class="body"><p>Wiederholte oder bewusste Verstöße können zu strengeren Maßnahmen führen. Eine automatische feste Sanktion für jede denkbare Situation wird bewusst nicht vorgegeben.</p></div></details>
+    <div class="grid">
+      <div class="card"><h3>Verwarnung</h3><p>Bei leichteren oder erstmaligen Verstößen.</p></div>
+      <div class="card"><h3>Temporäre Maßnahmen</h3><p>Zeitlich begrenzte Einschränkungen oder Ausschlüsse.</p></div>
+      <div class="card"><h3>Fraktionsmaßnahmen</h3><p>Interne oder administrative Maßnahmen gegenüber Fraktionen.</p></div>
+      <div class="card"><h3>Ausschluss</h3><p>Bei schweren oder wiederholten Verstößen kann ein Ausschluss erfolgen.</p></div>
+    </div>
+    <div class="notice">Die konkrete Sanktion richtet sich nach Schwere, Absicht, Vorgeschichte, Beweislage und Auswirkungen des Verstoßes.</div>
+  </section>
+
+  <section class="section" id="schluss">
+    <div class="section-head"><div><h2>📌 Schlussbestimmungen</h2><p class="desc">Gültigkeit und Änderungen des Regelwerks.</p></div></div>
+    <details class="rule"><summary>§8.1 · Änderungen</summary><div class="body"><p>Das Regelwerk kann jederzeit erweitert, präzisiert oder angepasst werden. Die jeweils veröffentlichte Fassung ist maßgeblich.</p></div></details>
+    <details class="rule"><summary>§8.2 · Inkrafttreten</summary><div class="body"><p>Neue Regelungen gelten ab ihrer offiziellen Bekanntgabe bzw. dem von der Serverleitung angegebenen Zeitpunkt.</p></div></details>
+    <details class="rule"><summary>§8.3 · Regelungslücken</summary><div class="body"><p>Regelungslücken dürfen nicht absichtlich ausgenutzt werden. In nicht geregelten Fällen kann die Serverleitung eine Einzelfallentscheidung treffen.</p></div></details>
+    <details class="rule"><summary>§8.4 · Ziel des Regelwerks</summary><div class="body"><p>Das Regelwerk soll ein faires, nachvollziehbares und angenehmes Roleplay ermöglichen. Es ersetzt nicht den gesunden Menschenverstand und gegenseitige Rücksichtnahme.</p></div></details>
+  </section>
+
+
+  <section class="section" id="historie">
+    <div class="section-head">
+      <div><h2>📝 Änderungshistorie</h2><p class="desc">Damit sichtbar bleibt, wann das Regelwerk geändert wurde.</p></div>
+    </div>
+    <div class="history">
+      <div class="history-item"><b>Version 1.7</b> · Suche, Meldefunktion, neues Design und weitere Regelstruktur ergänzt. <span>September 2026</span></div>
+      <div class="history-item"><b>Version 1.2</b> · Supportzeiten Montag–Mittwoch 16:00–21:00 und Donnerstag 16:00–21:00 angepasst. <span>September 2026</span></div>
+      <div class="history-item"><b>Version 1.0</b> · Grundstruktur mit sechs Hauptbereichen erstellt. <span>September 2026</span></div>
+    </div>
+  </section>
+
+  <section class="section" id="copyright">
+    <div class="section-head">
+      <div><h2>© Copyright & Nutzung</h2><p class="desc">Hinweis zur Nutzung der Website und des Regelwerks.</p></div>
+    </div>
+    <div class="notice">
+      <p><strong>© 2026 Bremen RP VC.</strong> Alle Rechte vorbehalten, soweit nicht anders angegeben.</p>
+      <p>Die Inhalte, Texte, Struktur und Gestaltung dieses Regelwerks sind für <strong>🇩🇪 | Bremen RP VC | 🎙️</strong> bestimmt. Eine vollständige oder wesentliche Übernahme, Veröffentlichung oder Weitergabe ohne Zustimmung der Rechteinhaber ist nicht gestattet.</p>
+      <p style="margin-bottom:0">Bei Beiträgen Dritter bleiben deren jeweilige Rechte unberührt.</p>
+    </div>
+  </section>
+
+</div>
+<footer id="footer">
+  <strong>🇩🇪 | Bremen RP VC | 🎙️</strong> · Offizielles Regelwerk · Version 1.7
+  <div class="footer-links">
+    <a href="#historie">Änderungshistorie</a>
+    <a href="#copyright">Copyright</a>
+  </div>
+  <small>© 2026 Bremen RP VC. Alle Rechte vorbehalten. Inhalte und Gestaltung dieser Website sind urheberrechtlich geschützt. Vervielfältigung oder Übernahme wesentlicher Inhalte nur mit Zustimmung der Rechteinhaber.</small>
+</footer>
+</main>
+</div>
+<script>
+const search=document.getElementById('search');
+const rules=[...document.querySelectorAll('.rule')];
+const results=document.getElementById('results');
+let searchTimer=null;
+
+function runSearch(){
+  const q=search.value.trim().toLowerCase();
+  let found=0;
+  let first=null;
+
+  rules.forEach(r=>{
+    const heading=r.querySelector('summary')?.textContent.toLowerCase() || "";
+    const body=r.querySelector('.body')?.textContent.toLowerCase() || "";
+    const all=(heading+" "+body).trim();
+    const hit=!q || all.includes(q);
+
+    r.style.display=hit?'':'none';
+
+    if(hit && q){
+      found++;
+      if(!first) first=r;
+      r.open=true;
+    }else if(!q){
+      r.open=false;
+    }
+  });
+
+  results.style.display=(q && !found)?'block':'none';
+
+  if(first){
+    clearTimeout(searchTimer);
+    searchTimer=setTimeout(()=>{
+      first.scrollIntoView({behavior:'smooth',block:'center'});
+      first.animate(
+        [{boxShadow:'0 0 0 3px rgba(101,118,232,.55)'},
+         {boxShadow:'0 0 0 9px rgba(139,77,232,0)'}],
+        {duration:1300,easing:'ease-out'}
+      );
+    },80);
+  }
+}
+search.addEventListener('input',runSearch);
+search.addEventListener('keydown',e=>{if(e.key==='Enter')runSearch()});
+
+document.querySelectorAll('.nav a,.card[href],.quick a').forEach(a=>{
+  a.addEventListener('click',()=>document.getElementById('sidebar').classList.remove('show'));
+});
+document.getElementById('menu').addEventListener('click',()=>{
+  document.getElementById('sidebar').classList.toggle('show');
+});
+
+// "/" fokussiert die Suche, ESC leert und schließt die Suche.
+document.addEventListener('keydown',e=>{
+  const tag=document.activeElement?.tagName;
+  if(e.key==='/' && !['INPUT','TEXTAREA','SELECT'].includes(tag)){
+    e.preventDefault();
+    search.focus();
+  }
+  if(e.key==='Escape' && document.activeElement===search){
+    search.value="";
+    runSearch();
+    search.blur();
+  }
+});
+
+// Navigation folgt beim Scrollen automatisch dem aktuellen Bereich.
+const navLinks=[...document.querySelectorAll('.nav a[href^="#"]')];
+const tracked=navLinks
+  .map(a=>document.querySelector(a.getAttribute('href')))
+  .filter(Boolean);
+const observer=new IntersectionObserver(entries=>{
+  const visible=entries.filter(e=>e.isIntersecting).sort((a,b)=>b.intersectionRatio-a.intersectionRatio)[0];
+  if(!visible) return;
+  navLinks.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+visible.target.id));
+},{rootMargin:'-20% 0px -65% 0px',threshold:[0,.25,.5,1]});
+tracked.forEach(el=>observer.observe(el));
+document.getElementById('reportTop').addEventListener('click',()=>{
+  document.getElementById('melden').scrollIntoView({behavior:'smooth'});
+  setTimeout(()=>document.getElementById('reportText')?.focus(),250);
+});
+
+const reportType=document.getElementById('reportType');
+const reportSection=document.getElementById('reportSection');
+const reportRule=document.getElementById('reportRule');
+const reportText=document.getElementById('reportText');
+const reportStatus=document.getElementById('reportStatus');
+
+document.getElementById('copyReport')?.addEventListener('click',async()=>{
+  const data={
+    type: reportType.value,
+    section: reportSection.value,
+    rule: reportRule.value.trim() || "Nicht angegeben",
+    description: reportText.value.trim() || "Keine Beschreibung angegeben."
+  };
+
+  const payload=[
+    "🇩🇪 | Bremen RP VC | 🎙️ – Fehlermeldung",
+    "Art: "+data.type,
+    "Bereich: "+data.section,
+    "Betroffene Regel/Seite: "+data.rule,
+    "",
+    "Beschreibung:",
+    data.description
+  ].join("\n");
+
+  try{
+    await navigator.clipboard.writeText(payload);
+    reportStatus.textContent="✅ Fehlermeldung wurde kopiert. Du kannst sie jetzt manuell weiterleiten.";
+  }catch(err){
+    reportStatus.textContent="❌ Kopieren nicht möglich. Markiere den Text bitte manuell.";
+  }
+});
+document.getElementById('clearReport')?.addEventListener('click',()=>{
+  reportRule.value=""; reportText.value=""; reportStatus.textContent="Formular geleert.";
+});
+</script>
+</body>
+</html>
